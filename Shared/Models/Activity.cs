@@ -28,7 +28,7 @@ namespace ConsoleApp.Models
         public string PrgEtime { get; set; }
 
         [JsonProperty("ORGNAME")]
-        public string OrgName { get; set; }
+        public string num { get; set; }
 
         [JsonProperty("PRGPLACE")]
         public string PrgPlace { get; set; }

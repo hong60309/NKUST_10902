@@ -9,10 +9,14 @@ namespace ConsoleApp.Services
 {
     public class ImportJsonService
     {
-        public List<Activity> LoadFormFile(string filePath)
+        //public List<Activity> LoadFormFile(string filePath)
+       // {
+         //   var str = System.IO.File.ReadAllText(filePath);
+         //   return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Activity>>(str);
+            public List<Number> LoadFormFile(string filePath)
         {
             var str = System.IO.File.ReadAllText(filePath);
-            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Activity>>(str);
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<List<Number>>(str);
         }
     }
 }
